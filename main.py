@@ -41,16 +41,15 @@ while True:
         for cad in lista:
             print(f'{cad}: {cad.get(cad)}')
             
-
     elif escolha == '3':
         cad = input('Insira o nome que deseja localizar: ')
-        if cad in lista:
-            print(f'O nome {cad} foi localizado na lista.')
+        for cad in lista:
+            print(f'O nome {lista} foi localizado na lista.')
             
     elif escolha == '4':
         novo_nome = input('Insira o novo nome: ')
         lista.append(novo_nome)
-        lista.sort()
+        
         if novo_nome in lista:
                 print()
                 print(f'O nome {novo_nome} foi inserido na lista com sucesso.')
